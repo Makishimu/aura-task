@@ -1,0 +1,1 @@
+You need to have internet. I included live Yandex Map and CDN for Roboto font and Font Awesome icons.

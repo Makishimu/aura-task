@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+
+	<title>Aura task</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="order-card">
+	<header>
+		<div class="brand">
+			<img src="img/logo.jpg"
+           srcset="img/logo@2x.jpg 2x,img/logo@3x.jpg 3x"
+           class="brand__logo">
+      <div class="brand_info-wrapper">
+        <h3 class="brand__name">Direct.farm</h3>
+        <span class="brand_motto">Управление предприятием</span>
+      </div>
+		</div>
+    <div class="search-field">
+      <img src="img/fill-3.svg"
+           class="search-field__search-icon">
+      <input class="search-field__input" type="text" placeholder="Найти">
+    </div>
+    <div class="notification-area">
+      <div class="notification-area__icon">
+        <img src="img/notification-icon.svg"
+             class="notification_icon">
+        <span class="notification-area__quantity_circle">13</span>
+      </div>
+      <div class="notification-area__icon">
+        <img src="img/group-5.svg"
+             class="message_icon">
+        <span class="notification-area__quantity_circle">13</span>
+      </div>
+      <div class="notification-area__icon">
+        <i class="fa fa-th" aria-hidden="true"></i>
+      </div>
+    </div>
+		<div class="user-info">
+			<img src="img/oval.jpg"
+     			srcset="img/oval@2x.jpg 2x,img/oval@3x.jpg 3x"
+     			class="user-info__avatar">
+      <div class="user-info__text">
+        <div class="user-info__user-name">Константин Константинопольский</div>
+        <div class="user-info__user-company">Колхоз «Ударница»</div>
+      </div>
+		</div>
+	</header>
+	<div id="bread-crumbs">
+    <a href="#my_orders" class="bread-crumbs__item">Мои ордера</a>
+    <i class="fa fa-caret-right bread-crumbs__arrow" aria-hidden="true"></i>
+    <a href="#order" class="bread-crumbs__item">ордер #8123671287</a>
+    <i class="fa fa-caret-right bread-crumbs__arrow" aria-hidden="true"></i>
+	</div>
+	<main id="main-section">
+		<aside id="left-section">
+      <nav>
+        <ul>
+          <li>
+            <i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Главная</span>
+          </li>
+          <li>
+            <i class="fa fa-bell-o nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Создать ордер</span>
+          </li>
+          <li>
+            <i class="fa fa-shopping-basket nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Ордера</span>
+          </li>
+          <li>
+            <i class="fa fa-th-list nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Предложения</span>
+          </li>
+          <li>
+            <i class="fa fa-comments-o nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Сообщения</span>
+          </li>
+          <li>
+            <i class="fa fa-file-text-o nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Договора</span>
+          </li>
+          <li>
+            <i class="fa fa-tasks nav-icon" aria-hidden="true"></i>
+            <span class="nav-text">Администрирование</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+		<div id="main-section-information">
+      <div class="order-info full-size-block order-params-main-information">
+        <div class="order-params">
+          <h4>Параметры ордера</h4>
+          <i class="fa fa-cog cog-icon" aria-hidden="true"></i>
+        </div>
+        <div class="order-name-section">
+          <h4 class="order-name">
+            Ордер #8123671287
+          </h4>
+          <select class="order-actions">
+            <option>Действия</option>
+            <option>Сохранить</option>
+            <option>Отказаться</option>
+          </select>
+        </div>
+        <table class="order-info-table">
+          <tr>
+            <td>
+              <div class="cell-header">ордер создан:</div>
+              1 декабрь 2017
+            </td>
+            <td class="left-bordered" colspan="4">
+              <div class="cell-header">создатель:</div>
+              Дмитрий Константинович
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" class="bottom-bordered"></td>
+          </tr>
+          <tr>
+            <td colspan="5" class="empty-cell"></td>
+          </tr>
+          <tr>
+            <td style="width:160px">
+              <div class="cell-header">сроки поставки:</div>
+              25 декабря 2017
+            </td>
+            <td class="left-bordered" style="width:170px">
+              <div class="cell-header">потребность:</div>
+              180 тонн
+            </td>
+            <td class="left-bordered" style="width:190px">
+              <div class="cell-header">параметры оплаты:</div>
+              Оплата сразу
+            </td>
+            <td class="left-bordered" colspan="2">
+              <div class="cell-header">цена за тонну:</div>
+              Не указана
+              <i class="fa fa-ellipsis-h three-dot" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" class="bottom-bordered"></td>
+          </tr>
+          <tr>
+            <td colspan="5" class="empty-cell"></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              <div class="cell-header">адрес доставки:</div>
+              РФ, г. Краснодар, Улица Ивана Красмкого, 14
+              <i class="fa fa-ellipsis-h three-dot" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" class="bottom-bordered"></td>
+          </tr>
+          <tr>
+            <td colspan="5" class="empty-cell"></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              <div class="left-cell">
+                <div class="cell-header">логистика:</div>
+                153 тонны [85%]
+                <img src="img/line.jpg">
+              </div>
+              <div class="right-cell left-bordered">
+                <div class="cell-header">оставшийся срок:</div>
+                24 дня  <img src="img/line.jpg">
+              </div>
+
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" class="bottom-bordered"></td>
+          </tr>
+          <tr>
+            <td colspan="5" class="empty-cell"></td>
+          </tr>
+          <tr>
+            <td colspan="5">
+              <div class="cell-header">логистика:</div>
+              Доставка за счет покупателя
+              <i class="fa fa-ellipsis-h three-dot" aria-hidden="true"></i>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" class="empty-cell"></td>
+          </tr>
+          <tr>
+            <td colspan="5" class="empty-cell"></td>
+          </tr>
+        </table>
+        <button class="change-order">Изменить параметры</button>
+        <button class="unnamed-action-order">Button Name</button>
+        <button class="reset-order">Сбросить ордер</button>
+      </div>
+      <div class="order-info half-size-block plot">
+        <div class="order-params">
+          <h4>Параметры ордера</h4>
+          <i class="fa fa-cog cog-icon" aria-hidden="true"></i>
+        </div>
+        <img src="img/plot01.png">
+      </div>
+      <div class="order-info half-size-block circle">
+        <div class="order-params">
+          <h4>Параметры ордера</h4>
+          <i class="fa fa-cog cog-icon" aria-hidden="true"></i>
+        </div>
+        <div class="circle-plot-area">
+          <img src="img/plot02.png"
+               class="circle-plot-img">
+          <ul>
+            <li>
+              <span>
+                Подтвержденные участники
+              </span>
+            </li>
+            <li>
+              <span>
+                Ожидают от вас ответ
+              </span>
+            </li>
+            <li>
+              <span>
+                Предположение выслано
+              </span>
+            </li>
+            <li>
+              <span>
+                Потенциально интересные
+              </span>
+            </li>
+            <li>
+              <span>
+                В ближайшем рассмотрении
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="order-info full-size-block confirmed-suppliers">
+        <div class="confirmed-suppliers-header">
+          <h4>Подтвержденные участники</h4>
+          <div>Скрыть карту</div>
+        </div>
+        <div class="map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4008033bc82b2972bd4ad8cf0501d9449068a40e832997785847abb3c9ff3096&amp;width=880&amp;height=410&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="suppliers-part">
+          <table class="suppliers-table">
+            <tr>
+              <th class="supplier-table-checkbox">
+                <input type="checkbox">
+              </th>
+              <th class="supplier-table-header">Поставщик</th>
+              <th class="supplier-table-header-rating">Рейтинг поставщика</th>
+              <th>Объем, тонны</th>
+              <th>Срок поставки</th>
+              <th>Статус</th>
+              <th>Предложений по ставке</th>
+              <th class="wanted-price">Жедаемая цена за тонну</th>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td class="supplier-ava">
+                <img src="img/ava1.png"
+                     class="avatar-img">
+                <div class="supplier-name">
+                  Константинопольский Константин Константинович
+                </div>
+
+              </td>
+              <td class="rating">
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star grey-star" aria-hidden="true"></i>
+              </td>
+              <td>23</td>
+              <td>21/12/2017</td>
+              <td>Договор #81237 подписан</td>
+              <td>1</td>
+              <td>
+                200
+                <span class="dollar">&#x24;</span>
+                <i class="fa fa-ellipsis-h three-dot" aria-hidden="true"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td class="supplier-ava">
+                <img src="img/ava2.png"
+                     class="avatar-img">
+                <div class="supplier-name">
+                  Заречный Иван Сергеевич
+                </div>
+              </td>
+              <td class="rating">
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star grey-star" aria-hidden="true"></i>
+              </td>
+              <td>23</td>
+              <td>21/12/2017</td>
+              <td>Договор отправлен</td>
+              <td>1</td>
+              <td>
+                200
+                <span class="dollar">&#x24;</span>
+                <i class="fa fa-ellipsis-h three-dot" aria-hidden="true"></i>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox">
+              </td>
+              <td class="supplier-ava">
+                <img src="img/ava3.png"
+                    class="avatar-img">
+                <div class="supplier-name">
+                  Заречный Иван Сергеевич
+                </div>
+              </td>
+              <td class="rating">
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star colored-star" aria-hidden="true"></i>
+                <i class="fa fa-star grey-star" aria-hidden="true"></i>
+              </td>
+              <td>23</td>
+              <td>21/12/2017</td>
+              <td>Апшеронск, республика адыгея</td>
+              <td>1</td>
+              <td>
+                200
+                <span class="dollar">&#x24;</span>
+                <i class="fa fa-ellipsis-h three-dot" aria-hidden="true"></i>
+              </td>
+            </tr>
+          </table>
+          <table class="action-buttons-table">
+            <tr>
+              <th class="action-button delete-button">Удалить</th>
+              <th class="action-button copy-button">Копия</th>
+              <th class="action-button close-button">Закрыть</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+	</main>
+	<footer id="footer">
+    <div class="footer__top-part-wrapper">
+      <div class="footer-brand">
+        <img src="img/group.svg"
+             class="footer-brand__logo">
+        <div class="footer-brand_info-wrapper">
+          <h3 class="footer-brand__name">Direct.farm</h3>
+          <span class="footer-brand_motto">Управление предприятием</span>
+        </div>
+      </div>
+      <div class="footer__phone-numbers-wrapper">
+        <div class="footer__phone-number">+7 (800) 123-45-67</div>
+        <div class="footer__phone-number">+7 (918) 765-43-21</div>
+      </div>
+      <div class="footer-search-field">
+        <img src="img/fill-3.svg"
+             class="footer-search-field__search-icon">
+        <input class="footer-search-field__input" type="text" placeholder="Найти">
+      </div>
+    </div>
+    <div class="footer__links-part-wrapper">
+      <div class="footer__links-item">
+        <a class="top-link" href="#">Торговая платформа</a>
+        <ul>
+          <li>
+            <a href="#">Торговая платформа</a>
+          </li>
+          <li>
+            <a href="#">Купить или продать</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__links-item">
+        <a class="top-link" href="#">О проекте</a>
+        <ul>
+          <li>
+            <a href="#">О проекте</a>
+          </li>
+          <li>
+            <a href="#">Истории</a>
+          </li>
+          <li>
+            <a href="#">База цен</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__links-item">
+        <a class="top-link" href="#">Торговая платформа</a>
+        <ul>
+          <li>
+            <a href="#">Торговая платформа</a>
+          </li>
+          <li>
+            <a href="#">Купить или продать</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__links-item">
+        <a class="top-link" href="#">О проекте</a>
+        <ul>
+          <li>
+            <a href="#">О проекте</a>
+          </li>
+          <li>
+            <a href="#">Истории</a>
+          </li>
+          <li>
+            <a href="#">База цен</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__links-item social-networks">
+        <a class="top-link" href="#">Социальные сети</a>
+        <ul>
+          <li>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+          </li>
+          <li>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">ВКонтакте</a>
+            <a href="#">Одноклассники</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__info-part">
+      <span class="copy">&copy;</span>
+      <div class="copyright-part">
+        <div>
+          2018 DIRECT. FARM, Все права защищены.
+          Использование материалов с сайта только с
+          согласия правообладателей
+        </div>
+      </div>
+      <div class="address-part">
+        <div>
+          Адрес: 115280, г. Москва, Васи Пупкина ул., д. 32, этаж 6, пом. 14, комн. 123
+          «DIRECT.FARM», ИНН 927371283, КПП 63472364, ОГРН 87623476
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
